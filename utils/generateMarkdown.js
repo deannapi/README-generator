@@ -3,15 +3,15 @@ function generateMarkdown(data) {
   return `# ${data.title}
     
   ## Badges
-    ![GitHub followers](https://img.shields.io/github/followers/deannapi?style=social)
-    ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deannapi/README-generator)
-    ![GitHub issues](https://img.shields.io/github/issues/deannapi/README-generator)
+    [GitHub followers](https://img.shields.io/github/followers/deannapi?style=social)
+    [GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deannapi/README-generator)
+    [GitHub issues](https://img.shields.io/github/issues/deannapi/README-generator)
   
 
   ## Description
     ${data.about}
 
-    <GIVEN a command-line application that accepts user input
+    ``<GIVEN a command-line application that accepts user input
     WHEN I am prompted for information about my application repository
     THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
     WHEN I enter my project title
@@ -25,10 +25,10 @@ function generateMarkdown(data) {
     WHEN I enter my email address
     THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
     WHEN I click on the links in the Table of Contents
-    THEN I am taken to the corresponding section of the README>
+    THEN I am taken to the corresponding section of the README>``
 
   ## Demo
-    ![readme-gen-gif](./src/readme-gen-gif.gif)
+    [readme-gen-gif](./src/readme-gen-gif.gif)
 
   ## Table of Contents
     [Description](#description)
