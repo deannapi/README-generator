@@ -21,12 +21,7 @@ const promptUser = () => {
             message: 'Choose the license for the project:',
             choices: ['Mozilla', 'Apache', 'MIT', 'Boost',]
         },
-        {
-            type: 'input',
-            name: 'gitUser',
-            message: 'What is your GitHub username?',
-        },
-        {
+                {
             type: 'input',
             name: 'credits',
             message: 'List your collaborators, if any, with links to their GitHub profiles.'

@@ -1,3 +1,7 @@
-# Professional README Generator Starter Code
+# README.md Generator with Node.js 👋
+    
+  ## About
+    * GIVEN a command-line application that accepts user input
 
-[How to create a Professional README](./readme-guide.md)
+  ## Licenses
+    * Mozilla
