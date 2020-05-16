@@ -2,7 +2,7 @@ const fs = require('fs');
 const util = require('util');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js')
-// const writeToFile = util.promisify(fs.writeFile);
+const writeToFile = util.promisify(fs.writeFile);
 
 // array of questions for user
 const promptUser = () => {
@@ -47,11 +47,11 @@ const promptUser = () => {
 };
 
 // function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data)
-        // if (err) throw new Error(err);
+// function writeToFile(fileName, data) {
+//     fs.writeFile(fileName, data)
+//         // if (err) throw new Error(err);
     
-};
+// };
 
 // function to initialize program
 async function init() {
@@ -65,12 +65,6 @@ async function init() {
         console.log(err);
     }
 }
-//     promptUser()
-//         .then(readmeData => {
-//             const readme = generateMarkdown(readmeData);
-            
-//         });
-// }
 
 // function call to initialize program
 init();

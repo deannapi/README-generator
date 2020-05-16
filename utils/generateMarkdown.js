@@ -31,28 +31,28 @@ function generateMarkdown(readmeData) {
     [readme-gen-gif](./src/readme-gen-gif.gif)
 
   ## Table of Contents
-    [Description](#description)
-    [Demo](#demo)
-    [Instructions](#instructions)
-    [Usage](#usage)
-    [Test](#test)
-    [Credits](#credits)
-    [License](#license)
+    * [Description](#about)
+    * [Demo](#demo)
+    * [Instructions](#instructions)
+    * [Usage](#usage)
+    * [Test](#test)
+    * [Credits](#credits)
+    * [License](#license)
     
   ## Installation
-    ``${readmeData.instructions}``
+    ${readmeData.instructions}
 
   ## Usage
-    ``${readmeData.usage}``
+    ${readmeData.usage}
 
   ## Test
-    ``${readmeData.tests}``
+    ${readmeData.tests}
 
   ## Credits
     ${readmeData.credits}
 
   ## License
-    ${readmeData.license}
+    This application is covered by the  ${readmeData.license} license.
 `;
 }
 
