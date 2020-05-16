@@ -29,7 +29,7 @@ function generateMarkdown(readmeData) {
     THEN I am taken to the corresponding section of the README
 
   ## Demo
-  ![readme-gen-gif](../readme-gen-gif.gif)
+  ![](readme-gen-gif.gif)
 
   ## Table of Contents
   * [Description](#about)
@@ -50,7 +50,7 @@ function generateMarkdown(readmeData) {
     ${readmeData.tests}
 
   ## Credits
-    ${readmeData.credits}
+  [${readmeData.credits}](https://github.com/${readmeData.credits})
 
   ## License
     This application is covered by the  ${readmeData.license} license.

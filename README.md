@@ -27,7 +27,7 @@
     THEN I am taken to the corresponding section of the README
 
   ## Demo
-  ![readme-gen-gif](../readme-gen-gif.gif)
+  ![](readme-gen-gif.gif)
 
   ## Table of Contents
   * [Description](#about)
@@ -48,7 +48,7 @@
     npm test
 
   ## Credits
-    GitHub: [@deannapi](https://github.com/deannapi)
+  [deannapi](https://github.com/deannapi)
 
   ## License
     This application is covered by the  MIT license.
