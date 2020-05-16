@@ -41,11 +41,6 @@ const promptUser = () => {
             name: 'tests',
             message: 'Is there a test included?',
         },
-        {
-            type: 'input',
-            name: 'badges',
-            message: 'Link badges here; separate by commas.'
-        }
     ]);
 };
 
