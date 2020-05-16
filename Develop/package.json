@@ -1,14 +1,30 @@
 {
-  "name": "static-site",
-  "version": "1.0.0",
-  "description": "",
+  "name": "inquirer",
+  "version": "7.1.0",
+  "description": "readme generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "run test"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "DeAnna Martinez",
+  "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.3.1",
+    "mocha": "^7.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deannapi/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "node",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/deannapi/readme-generator/issues"
+  },
+  "homepage": "https://github.com/deannapi/readme-generator#readme",
+  "devDependencies": {}
 }
