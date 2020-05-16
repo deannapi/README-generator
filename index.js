@@ -1,6 +1,8 @@
 const fs = require('fs');
+const util = require('util');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js')
+// const writeToFile = util.promisify(fs.writeFile);
 
 // array of questions for user
 const promptUser = () => {
@@ -21,11 +23,6 @@ const promptUser = () => {
             message: 'Choose the license for the project:',
             choices: ['Mozilla', 'Apache', 'MIT', 'Boost',]
         },
-                {
-            type: 'input',
-            name: 'credits',
-            message: 'List your collaborators, if any, with links to their GitHub profiles.'
-        },
         {
             type: 'input',
             name: 'instructions',
@@ -34,31 +31,46 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide instructions and examples for use. Include screenshots.'
+            message: 'Provide instructions to run the application.'
         },
         {
             type: 'input',
             name: 'tests',
             message: 'Is there a test included?',
         },
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'List your collaborators, if any, with links to their GitHub profiles.'
+        }
     ]);
 };
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) throw new Error(err);
-    });
+    fs.writeFile(fileName, data)
+        // if (err) throw new Error(err);
+    
 };
 
 // function to initialize program
-function init() {
-    promptUser()
-        .then(readmeData => {
-            const readme = generateMarkdown(readmeData);
-            writeToFile('./README.md', readme);
-        });
+async function init() {
+    try {
+        const readmeData = await promptUser();
+        const readme = generateMarkdown(readmeData);
+        await writeToFile('./README.md', readme);
+        console.log('README.md was created successfully!');
+    }
+    catch (err) {
+        console.log(err);
+    }
 }
+//     promptUser()
+//         .then(readmeData => {
+//             const readme = generateMarkdown(readmeData);
+            
+//         });
+// }
 
 // function call to initialize program
 init();
