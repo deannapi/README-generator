@@ -53,7 +53,7 @@ function generateMarkdown(readmeData) {
   [GitHub: ${readmeData.credits}](https://github.com/${readmeData.credits})
 
   ## License
-    This application is covered by the [${readmeData.license}](https://choosealicense.com/licenses/mit/) license.
+    This application is ${readmeData.license} licensed.
 `;
 }
 

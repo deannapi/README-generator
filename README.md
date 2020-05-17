@@ -51,4 +51,4 @@
   [GitHub: deannapi](https://github.com/deannapi)
 
   ## License
-    This application is covered by the [MIT](https://choosealicense.com/licenses/mit/) license.
+    This application is MIT licensed.
