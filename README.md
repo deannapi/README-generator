@@ -8,7 +8,7 @@
   
 
   ## Description
-    🔍 Using node.js, this application accepts user input from `<inquirer>` to create a professional README.md file for the repository.
+    🔍 Using node.js, this application accepts user input from inquirer to create a professional README.md file for the repository.
 
     GIVEN a command-line application that accepts user input
     WHEN I am prompted for information about my application repository
@@ -30,7 +30,7 @@
   ![](readme-gen-gif.gif)
 
   ## Table of Contents
-  * [Description](#about)
+  * [Description](#description)
   * [Demo](#demo)
   * [Instructions](#instructions)
   * [Usage](#usage)
@@ -48,7 +48,7 @@
     npm test
 
   ## Credits
-  [deannapi](https://github.com/deannapi)
+  [GitHub: deannapi](https://github.com/deannapi)
 
   ## License
-    This application is covered by the  MIT license.
+    This application is covered by the [MIT](https://choosealicense.com/licenses/mit/) license.

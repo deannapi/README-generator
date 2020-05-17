@@ -41,7 +41,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'credits',
-            message: 'List your collaborators, if any, with links to their GitHub profiles.'
+            message: 'List the GitHub username(s) for any collaborators.'
         }
     ]);
 };

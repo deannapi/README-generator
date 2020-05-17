@@ -32,7 +32,7 @@ function generateMarkdown(readmeData) {
   ![](readme-gen-gif.gif)
 
   ## Table of Contents
-  * [Description](#about)
+  * [Description](#description)
   * [Demo](#demo)
   * [Instructions](#instructions)
   * [Usage](#usage)
@@ -50,10 +50,10 @@ function generateMarkdown(readmeData) {
     ${readmeData.tests}
 
   ## Credits
-  [${readmeData.credits}](https://github.com/${readmeData.credits})
+  [GitHub: ${readmeData.credits}](https://github.com/${readmeData.credits})
 
   ## License
-    This application is covered by the  ${readmeData.license} license.
+    This application is covered by the [${readmeData.license}](https://choosealicense.com/licenses/mit/) license.
 `;
 }
 
