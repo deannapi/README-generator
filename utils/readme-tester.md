@@ -15,3 +15,5 @@
 * [Test](#test)
 * [Credits](#credits)
 * [License](#license)
+
+[${readmeData.license}](https://choosealicense.com/licenses/mit/)
